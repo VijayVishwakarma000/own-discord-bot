@@ -11,13 +11,13 @@ bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag}!`);
     welcome(bot)
     goodbye(bot)
+      bot.user.setActivity(" TOXIC",{
+        type:"LISTENING"
+
+        
+    })
 });
-bot.user.setPresence(" ", {
-    status:"online",
-    type: "LISTENING",
-    name:"TOXIC"
-    
-});
+
 bot.on('message', msg => {
     if (msg.content === `${config.prefix}play`) {
         msg.reply('Type $playcommand to get list of commands');
