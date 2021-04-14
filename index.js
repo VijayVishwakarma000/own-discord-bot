@@ -12,8 +12,11 @@ bot.on('ready', () => {
     welcome(bot)
     goodbye(bot)
 });
-bot.user.setActivity("to TOXIC", {
-  type: "LISTENING"
+bot.user.setPresence(" ", {
+    status:"online",
+    type: "LISTENING",
+    name:"TOXIC"
+    
 });
 bot.on('message', msg => {
     if (msg.content === `${config.prefix}play`) {
