@@ -12,7 +12,9 @@ bot.on('ready', () => {
     welcome(bot)
     goodbye(bot)
 });
-
+bot.user.setActivity("to TOXIC", {
+  type: "LISTENING"
+});
 bot.on('message', msg => {
     if (msg.content === `${config.prefix}play`) {
         msg.reply('Type $playcommand to get list of commands');
