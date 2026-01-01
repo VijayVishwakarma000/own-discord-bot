@@ -16,11 +16,11 @@ Built using JavaScript (Node.js)
 
 Tech Stack
 
-Node.js
+    Node.js
 
-discord.js
+    discord.js
 
-JavaScript
+    JavaScript
 
 Prerequisites
 
